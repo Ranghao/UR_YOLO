@@ -121,7 +121,7 @@ class BiLevelRoutingAttention(nn.Module):
     soft_routing: wether to multiply soft routing weights
     """
 
-    def __init__(self, dim, n_win=7, num_heads=8, qk_dim=None, qk_scale=None,
+    def __init__(self, dim, n_win=20, num_heads=8, qk_dim=None, qk_scale=None,
                  kv_per_win=4, kv_downsample_ratio=4, kv_downsample_kernel=None, kv_downsample_mode='identity',
                  topk=4, param_attention="qkvo", param_routing=False, diff_routing=False, soft_routing=False,
                  side_dwconv=3,
